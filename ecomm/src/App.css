@@ -1,0 +1,197 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a2e;
+  color: #eaeaea;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+ 
+  align-items: center;
+  justify-content: center;
+   padding-top: 60px; /* This is to account for the fixed navbar height */
+}
+
+
+
+nav {
+    background-color: #0f3460;
+    padding: 15px;
+   
+    width: 100%; /* Ensure nav takes up the full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed; /* Fix the nav at the top */
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+
+
+nav a, nav span {
+  color: #eaeaea;
+  text-decoration: none;
+  margin: 0 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover, nav span:hover {
+  color: #f9d342;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  width: 80%;
+}
+
+.product-card {
+  margin-left:40px;
+  background-color: #16213e;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  text-align: center;
+  color: #eaeaea;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #f9d342;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: #f9d342;
+  font-weight: bold;
+}
+
+.product-details {
+  margin-left: 200px;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  background-color: #16213e;
+  border-radius: 10px;
+}
+
+.product-details img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.product-details h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.product-details p {
+  font-size: 1.1rem;
+  color: #f9d342;
+}
+
+.product-details button {
+  padding: 10px 20px;
+  background-color: #e94560;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.product-details button:hover {
+  background-color: #ff2e63;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #1a1a2e;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #eaeaea;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.cart-item-info {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item span {
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+h2, h3 {
+  color: #f9d342;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.newclass{
+  
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    height: 300px; /* Or any fixed height */
+  
+}
+.my{
+  margin-left: 450px;
+}
+.checkoutbox{
+  margin-left: 600px;
+}
+.productBox{
+  margin-left: 300px;
+}
